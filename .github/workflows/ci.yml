@@ -1,0 +1,36 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Run PowerShell Build Script
+      shell: pwsh
+      run: ./build.ps1
+
+    - name: Install Doxygen
+      run: sudo apt-get install doxygen -y
+
+    - name: Generate Documentation
+      run: doxygen Doxyfile
+
+    - name: Upload Documentation Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: Doxygen-HTML-Docs
+        path: html/
