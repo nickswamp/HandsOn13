@@ -1,20 +1,26 @@
-namespace HelloWorld.Tests
-{
-    using Xunit;
-    
-    public class ProgramTests
-    {
-        /// <summary>
-        /// Verifies that the GetGreeting method returns the expected output.
-        /// </summary>
-        [Fact]
-        public void GetGreeting_ReturnsHelloWorld()
-        {
-            // Arrange & Act
-            var result = Program.GetGreeting();
+// <copyright file="ProgramTests.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
-            // Assert
-            Assert.Equal("Hello, World!", result);
-        }
+namespace HelloWorld.Tests;
+
+using Xunit;
+
+/// <summary>
+/// Test class for the main Program.
+/// </summary>
+public class ProgramTests
+{
+    /// <summary>
+    /// Verifies that the GetGreeting method returns the expected output.
+    /// </summary>
+    [Fact]
+    public void GetGreeting_ReturnsHelloWorld()
+    {
+        // Arrange & Act
+        var result = Program.GetGreeting();
+
+        // Assert
+        Assert.Equal("Hello, World!", result);
     }
 }

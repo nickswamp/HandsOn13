@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelloWorld</name>
+    </assembly>
+    <members>
+        <member name="T:HelloWorld.Program">
+            <summary>
+            The main program class for the HelloWorld application.
+            </summary>
+        </member>
+        <member name="M:HelloWorld.Program.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">The command-line arguments.</param>
+        </member>
+        <member name="M:HelloWorld.Program.GetGreeting">
+            <summary>
+            Generates a standard greeting message.
+            </summary>
+            <returns>A string containing the greeting.</returns>
+        </member>
+    </members>
+</doc>
