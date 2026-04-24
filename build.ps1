@@ -1,5 +1,9 @@
 Write-Host "Running Build Script" -ForegroundColor Green
 
+Write-Host "0. Restoring dependencies" -ForegroundColor Cyan
+dotnet restore
+if ($LASTEXITCODE -ne 0) { throw "Restore failed. Check your project paths." }
+
 Write-Host "1 - Checking formatting" -ForegroundColor Cyan
 dotnet format --verify-no-changes
 if ($LASTEXITCODE -ne 0) { throw "Code formatting failed. Run 'dotnet format' to fix." }
