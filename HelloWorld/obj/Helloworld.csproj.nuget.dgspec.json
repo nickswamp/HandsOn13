@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCODE\\HandsOn13\\HelloWorld\\Helloworld.csproj": {}
+    "D:\\VSCODE\\HandsOn13\\HelloWorld\\HelloWorld.csproj": {}
   },
   "projects": {
-    "D:\\VSCODE\\HandsOn13\\HelloWorld\\Helloworld.csproj": {
+    "D:\\VSCODE\\HandsOn13\\HelloWorld\\HelloWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCODE\\HandsOn13\\HelloWorld\\Helloworld.csproj",
-        "projectName": "Helloworld",
-        "projectPath": "D:\\VSCODE\\HandsOn13\\HelloWorld\\Helloworld.csproj",
+        "projectUniqueName": "D:\\VSCODE\\HandsOn13\\HelloWorld\\HelloWorld.csproj",
+        "projectName": "HelloWorld",
+        "projectPath": "D:\\VSCODE\\HandsOn13\\HelloWorld\\HelloWorld.csproj",
         "packagesPath": "C:\\Users\\nicks\\.nuget\\packages\\",
         "outputPath": "D:\\VSCODE\\HandsOn13\\HelloWorld\\obj\\",
         "projectStyle": "PackageReference",
