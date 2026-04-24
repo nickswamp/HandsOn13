@@ -1,15 +1,18 @@
-using Xunit;
 
-namespace HelloWorld.Tests;
-
-public class ProgramTests
+namespace HelloWorld.Tests
 {
-    [Fact]
-    public void GetGreeting_ReturnsHelloWorld()
-    {
-        var result = Program.GetGreeting();
+    using Xunit;
 
-        Assert.Equal("Hello, World!", result);
+    public class ProgramTests
+    {
+        [Fact]
+        public void GetGreeting_ReturnsHelloWorld()
+        {
+            // Arrange & Act
+            var result = Program.GetGreeting();
+
+            // Assert
+            Assert.Equal("Hello, World!", result);
+        }
     }
 }
-
